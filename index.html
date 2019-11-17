@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>HTML wireframe</title>
+    <title>Meredyth Plack Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="index.css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
 </head>
@@ -11,14 +11,20 @@
     <nav role="navigation" class="navbar">
       <div class="hamburger">&#9776;</div>
       <ul class="menu">
-        <ul class="menuItems">About Me</ul>
-        <ul class="menuItems">Projects</ul>
-        <ul class="menuItems">Contact</ul>
+        <ul class="menuItems" >
+          <a href="#aboutMe">About Me</a>
+        </ul>
+        <ul class="menuItems">
+          <a href="#projects">Projects</a>
+        </ul>
+        <ul class="menuItems">
+          <a href="#contact">Contact</a>
+        </ul>
       </ul>
     </nav>
     <main role="main">
         <section class="outerContainer" id="outerContainerAbout">
-            <h1>About Me</h1>
+            <h1 id="aboutMe">About Me</h1>
           <section class="innerContainer">
             <p class="headline">Here to build cohesive and reliable solutions. 
               </p>
@@ -26,31 +32,19 @@
               </p>
           </section>
         </section>
-
         <section class="outerContainer" id="outerContainerProjects">
-            <h1>Projects</h1>
+            <h1 id="projects">Projects</h1>
             <section class="innerContainer">
               <section class="projectContainer">
                 <img src="./images/quiz_app.png" alt="Baltimore Quiz" class="image" style="height:100%">
                 <div class="info">
                   <div class="infoText">
-                    <p class="infoTextDetails">This project is a simple quiz to test and teach Baltimore Trivia.</p>
-                    <p class="infoTextDetails">Tech: HTTP, JavaScript, jQuery, CSS</p>
-                    <p href="https://meredythp.github.io/baltimore-quiz/" class="infoTextDetails">Live Link</p>
-                    <p href="https://github.com/meredythp/baltimore-quiz" class="infoTextDetails">Repo Link</p>
+                    <p>This project is a simple quiz to test and teach Baltimore Trivia.</p>
+                    <p>Tech: HTTP, JavaScript, jQuery, CSS</p>
+                    <p href="https://meredythp.github.io/baltimore-quiz/">Live Link</p>
+                    <p href="https://github.com/meredythp/baltimore-quiz">Repo Link</p>
                   </div>
                 </div>
-              </section>
-              <section class="projectContainer">
-                  <img src="./images/quiz_app.png" alt="Placeholder Image" class="image" style="height:100%">
-                  <div class="info">
-                    <div class="infoText">
-                      <p>This project is a placeholder project.</p>
-                      <p>Tech: HTTP, JavaScript, jQuery, CSS</p>
-                      <p href="https://meredythp.github.io/baltimore-quiz/">Live Link</p>
-                      <p href="https://github.com/meredythp/baltimore-quiz">Repo Link</p>
-                    </div>
-                  </div>
               </section>
               <section class="projectContainer">
                   <img src="./images/quiz_app.png" alt="Placeholder Image" class="image" style="height:100%">
@@ -78,18 +72,21 @@
         </section>
     </main>
     <footer role="contact-info">
-        <h1>Contact Me</h1>
+        <h1 id="contact">Contact Me</h1>
         <div class="contactContainer">
-          <a href="https://github.com/meredythp/portfolio">
+          <a href="https://github.com/meredythp/" class="contactLink">
             <img src="./images/GitHub-Mark-120px-plus.png" alt="github logo" class="contactLogo">
           </a>
-          <a href="https://www.linkedin.com/in/plack/">
+          <a href="https://www.linkedin.com/in/plack/" class="contactLink">
             <img src="./images/LI-In-Bug.png" alt="linkedin logo" class="contactLogo">
           </a>
-          <a href="mailto:meredyth.plack@gmail.com">
+          <a href="mailto:meredyth.plack@gmail.com" class="contactLink">
               <img src="./images/mail_icon.png" alt="mail logo" class="contactLogo">
           </a>
         </div>
       </footer>
 </body>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+<script src="index.js"></script>
 </html>
