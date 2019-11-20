@@ -13,13 +13,13 @@
       <div class="hamburger">&#9776;</div>
       <ul class="menu">
         <li class="menuItems" >
-          <a href="#aboutMe">About Me</a>
+          <a href="#aboutMe" class="pointer">About Me</a>
         </li>
         <li class="menuItems">
-          <a href="#projects">Projects</a>
+          <a href="#projects" class="pointer">Projects</a>
         </li>
         <li class="menuItems">
-          <a href="#contact">Contact</a>
+          <a href="#contact" class="pointer">Contact</a>
         </li>
       </ul>
     </nav>
@@ -37,14 +37,22 @@
             <h1 id="projects">Projects</h1>
             <section class="innerContainer">
               <section class="projectContainer">
-                <img src="./images/quiz_app.png" alt="Baltimore Quiz" class="image hide" style="height:100%">
+                <div>
+                    <img src="./images/quiz_app.png" alt="Baltimore Quiz" class="image hide" style="height:100%">
+                    <div class="corner pointer">
+                        <div class="arrow">
+                          →
+                        </div>
+                      </div>
+                </div>
+                
                 <div class="info show">
                   <div class="infoText">
                     <p>Baltimore Trivia:  This is a simple quiz to test and teach Baltimore Trivia.</p>
                     <p>Tech: HTTP, JavaScript, jQuery, CSS</p>
-                    <a href="https://meredythp.github.io/baltimore-quiz/" target="_blank">Live Link</a>
-                    <a href="https://github.com/meredythp/baltimore-quiz" target="_blank">Repo Link</a>
-                    <div class="corner">
+                    <a href="https://meredythp.github.io/baltimore-quiz/" target="_blank" class="pointer">Live Link</a>
+                    <a href="https://github.com/meredythp/baltimore-quiz" target="_blank" class="pointer">Repo Link</a>
+                    <div class="corner pointer">
                         <div class="arrow">
                           →
                         </div>
@@ -58,13 +66,13 @@
     <footer>
         <h1 id="contact">Contact Me</h1>
         <div class="contactContainer">
-          <a href="https://github.com/meredythp/" class="contactLink">
+          <a href="https://github.com/meredythp/" class="contactLink pointer" target="_blank">
             <img src="./images/GitHub-Mark-120px-plus.png" alt="github logo" class="contactLogo">
           </a>
-          <a href="https://www.linkedin.com/in/plack/" class="contactLink">
+          <a href="https://www.linkedin.com/in/plack/" class="contactLink pointer" target="_blank">
             <img src="./images/LI-In-Bug.png" alt="linkedin logo" class="contactLogo">
           </a>
-          <a href="mailto:meredyth.plack@gmail.com" class="contactLink">
+          <a href="mailto:meredyth.plack@gmail.com" class="contactLink pointer" target="_blank">
               <img src="./images/mail_icon.png" alt="mail logo" class="contactLogo">
           </a>
         </div>

@@ -25,7 +25,7 @@ nav, ul, footer {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  background-color: #87a1a1;
+  background-color: #44724D;
   color: white;
 }
 
@@ -38,6 +38,7 @@ ul {
 .menuItems {
   margin-right: 10%;
   margin-bottom: 2%;
+  color: #444;
 }
 
 .hamburger {
@@ -117,23 +118,29 @@ main {
   border-radius: 25px;
 }
 
+p, a {
+  margin: 0;
+  text-align: left;
+}
+
 .infoText {
   font-size: 20px;
   padding: 10%;
   width: 80%;
   height: 80%;
-  text-align: center;
+  text-align: left;
+
 }
 
 
 .bio {
   font-size: 20px;
-    font-weight: normal;
-    color: #555555;
-    margin: 5% 5%;
-    opacity: .6;
-    padding: 5%;
-    text-align: left;
+  font-weight: normal;
+  color: #555555;
+  margin: 0 5% 5% 5%;
+  opacity: .6;
+  padding: 5%;
+  text-align: left;
 }
 
 .menu {
@@ -176,6 +183,16 @@ main {
     padding: 0px;
   }
   
+  .infoText {
+    font-size: 20px;
+  
+  }
+  
+  
+  .bio {
+    font-size: 20px;
+  }
+  
 }
 
 /* .projectContainer:hover .image {
@@ -202,7 +219,7 @@ main {
   font-weight: 600;
   color: #616161;
   padding: 5%;
-  margin-bottom: 0;
+  margin: 5% 5% 0 5%;
 }
 
 .contactContainer {
@@ -241,7 +258,7 @@ a {
 }
 
 h1 {
-  color: white;
+  color: #444;
 }
 
 .corner {
@@ -267,4 +284,8 @@ h1 {
 
 link {
   z-index: 10;
+}
+
+.pointer:hover {
+  cursor: pointer;
 }
