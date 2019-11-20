@@ -8,3 +8,8 @@ $(document).ready(function () {
   );
   
   });
+
+$('.corner').on('click', function(event) {
+    $('.projectContainer .image').toggleClass('show hide');
+    $('.projectContainer .info').toggleClass('show hide');
+  });

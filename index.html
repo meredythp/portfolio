@@ -3,26 +3,27 @@
 <head>
     <title>Meredyth Plack Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="index.css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav role="navigation" class="navbar">
+    <nav class="navbar">
       <div class="hamburger">&#9776;</div>
       <ul class="menu">
-        <ul class="menuItems" >
+        <li class="menuItems" >
           <a href="#aboutMe">About Me</a>
-        </ul>
-        <ul class="menuItems">
+        </li>
+        <li class="menuItems">
           <a href="#projects">Projects</a>
-        </ul>
-        <ul class="menuItems">
+        </li>
+        <li class="menuItems">
           <a href="#contact">Contact</a>
-        </ul>
+        </li>
       </ul>
     </nav>
-    <main role="main">
+    <main>
         <section class="outerContainer" id="outerContainerAbout">
             <h1 id="aboutMe">About Me</h1>
           <section class="innerContainer">
@@ -36,42 +37,25 @@
             <h1 id="projects">Projects</h1>
             <section class="innerContainer">
               <section class="projectContainer">
-                <img src="./images/quiz_app.png" alt="Baltimore Quiz" class="image" style="height:100%">
-                <div class="info">
+                <img src="./images/quiz_app.png" alt="Baltimore Quiz" class="image hide" style="height:100%">
+                <div class="info show">
                   <div class="infoText">
                     <p>Baltimore Trivia:  This is a simple quiz to test and teach Baltimore Trivia.</p>
                     <p>Tech: HTTP, JavaScript, jQuery, CSS</p>
-                    <p href="https://meredythp.github.io/baltimore-quiz/">Live Link</p>
-                    <p href="https://github.com/meredythp/baltimore-quiz">Repo Link</p>
+                    <a href="https://meredythp.github.io/baltimore-quiz/" target="_blank">Live Link</a>
+                    <a href="https://github.com/meredythp/baltimore-quiz" target="_blank">Repo Link</a>
+                    <div class="corner">
+                        <div class="arrow">
+                          →
+                        </div>
+                      </div>
                   </div>
                 </div>
-              </section>
-              <section class="projectContainer">
-                  <img src="./images/quiz_app.png" alt="Placeholder Image" class="image" style="height:100%">
-                  <div class="info">
-                    <div class="infoText">
-                      <p>This project is a placeholder project.</p>
-                      <p>Tech: HTTP, JavaScript, jQuery, CSS</p>
-                      <p href="https://meredythp.github.io/baltimore-quiz/">Live Link</p>
-                      <p href="https://github.com/meredythp/baltimore-quiz">Repo Link</p>
-                    </div>
-                  </div>
-              </section>
-              <section class="projectContainer">
-                  <img src="./images/quiz_app.png" alt="Placeholder Image" class="image" style="height:100%">
-                  <div class="info">
-                    <div class="infoText">
-                      <p>This project is a placeholder project.</p>
-                      <p>Tech: HTTP, JavaScript, jQuery, CSS</p>
-                      <p href="https://meredythp.github.io/baltimore-quiz/">Live Link</p>
-                      <p href="https://github.com/meredythp/baltimore-quiz">Repo Link</p>
-                    </div>
-                  </div>
               </section>
             </section>
         </section>
     </main>
-    <footer role="contact-info">
+    <footer>
         <h1 id="contact">Contact Me</h1>
         <div class="contactContainer">
           <a href="https://github.com/meredythp/" class="contactLink">
@@ -85,8 +69,7 @@
           </a>
         </div>
       </footer>
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+      <script src="index.js"></script>
 </body>
-<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
-<script src="index.js"></script>
 </html>
